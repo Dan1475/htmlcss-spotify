@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+main{
+  display: flex;
+  height: 80vh;
+}
+.left{
+  width: 20%;
+  background: black;
+  color: white;
+}
+.right{
+  width: 80%;
+  background: green;
+}
+footer{
+  background: grey;
+  height: 20vh;
+}
