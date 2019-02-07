@@ -14,9 +14,9 @@ main{
   display: flex;
 }
 .left{
-  /* position: fixed;
-  z-index: 1; */
-  height: auto;
+  position: fixed;
+  z-index: 1;
+  height: 80vh;
   width: 25%;
   background: #0F0A12;
   color: white;
@@ -24,7 +24,12 @@ main{
   flex-direction: column;
   justify-content: space-between;
 }
+.wd-icon{
+  width: 25px;
+}
+
 .right{
+  margin-left: 25%;
   height: auto;
   width: 75%;
   background-image: url(backg.png);
@@ -40,8 +45,10 @@ footer{
 .up-left{
   display: flex;
   flex-direction: column;
+  justify-content:space-around;
+  margin: 10% 0 0 15%;
 }
-.up-left img{
+.up-left>img{
   width: 80%;
 }
 .nav ul{
@@ -79,4 +86,69 @@ footer{
 }
 .immagine img{
   width: 100%;
+}
+footer, .left-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-footer img{
+  max-width: 70px;
+  max-height: 70px;
+
+}
+.left-footer>*{
+margin: 0 20px;
+}
+
+.center-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center-footer img{
+  width: 100px;
+}
+.icon-row *{
+  margin: 0 35px;
+}
+.right-footer i{
+  margin: 0 15px 0 15px;
+}
+.right-footer{
+  display: flex;
+}
+.volume-bar{
+  width: 70px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.white-volume{
+  width: 65%;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.grey-volume{
+  width: 35%;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+.play-bar{
+  width: 600px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.played-music{
+  width: 75%;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.unplayed-music{
+  width: 25%;
+  border: 3px solid grey;
+  border-radius: 10px;
+  margin-right: 20px;
 }

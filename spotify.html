@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,14 +13,22 @@
     <div class="app">
 
     <main>
+      <!-- parte sinistra fissa -->
        <div class="left pad-top">
          <div class="up-left">
-
           <img src="logo.png" alt="">
-          <span>ciao</span>
-          <span>ciao</span>
-          <span>ciao</span>
-          <span>ciao</span>
+          <div class="search">
+            <img class="wd-icon" src="search.svg" alt="">
+            <span>Cerca</span>
+          </div>
+          <div class="home">
+            <img class="wd-icon" src="home.svg" alt="">
+            <span>Home</span>
+          </div>
+          <div class="library">
+            <img class="wd-icon" src="libreria.svg" alt="">
+            <span>La tua Libreria</span>
+          </div>
          </div>
 
          <div class="down-left">
@@ -27,15 +36,16 @@
          </div>
 
        </div>
-
+<!-- parte destra -->
       <div class="right padding-top">
         <div class="nav">
           <ul>
-            <li class="green-bar">CIAO</li>
-            <li>CIAO</li>
-            <li>CIAO</li>
-            <li>CIAO</li>
-            <li>CIAO</li>
+            <li class="green-bar">IN EVIDENZA</li>
+            <li>PODCAST</li>
+            <li>CLASSIFICHE</li>
+            <li>GENERI E MOOD</li>
+            <li>NUOVE USCITE</li>
+            <li>SCOPRI</li>
           </ul>
         </div>
 
@@ -122,15 +132,44 @@
          </div>
         </div>
 
-
-
-
-
-
+<!-- inizio footer -->
       </div>
     </main>
     <footer>
-      footer
+      <div class="left-footer">
+        <img src="rodeo.jpg" alt="">
+        <div class="artista">
+         <span>Rodeo</span><br>
+         <span>Wrongouyou</span>
+        </div>
+        <i class="far fa-heart"></i>
+      </div>
+      <div class="center-footer">
+        <div class="icon-row">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="fas fa-play"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-sync-alt"></i>
+        </div>
+        <div class="play-bar">
+          <span>2:58</span>
+          <div class="played-music"></div>
+          <div class="unplayed-music"></div>
+          <span>4:15</span>
+
+        </div>
+
+      </div>
+      <div class="right-footer">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-mobile-alt"></i>
+        <i class="fas fa-volume-down"></i>
+        <div class="volume-bar">
+          <div class="white-volume"></div>
+          <div class="grey-volume"></div>
+        </div>
+      </div>
     </footer>
    </div>
   </body>
