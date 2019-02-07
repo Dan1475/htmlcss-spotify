@@ -30,7 +30,7 @@ main{
   margin-left: 20%;
   height: auto;
   width: 80%;
-  background-image: url(backg.png);
+  background-image: linear-gradient(to left, #304334, #32AD5E)
 }
 footer{
   background: #282828;
@@ -39,6 +39,9 @@ footer{
   position: sticky;
   bottom: 0;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .up-left{
   height: 50%;
@@ -92,8 +95,8 @@ footer{
   color: white;
 }
 .immagine, .didascalia{
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
   position: relative;
 }
 .immagine img{
@@ -121,7 +124,7 @@ footer{
   font-size: 13px;
   color: white;
 }
-footer, .left-footer{
+.left-footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,4 +188,16 @@ margin: 0 20px;
   border: 3px solid grey;
   border-radius: 10px;
   margin-right: 20px;
+}
+@media all and (max-width: 800px){
+  .disappear span{
+    display: none;
+  }
+  .left{
+    width: 10%;
+  }
+  .right{
+    width: 90%;
+    margin-left: 10%;
+  }
 }
