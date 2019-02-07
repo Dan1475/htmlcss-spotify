@@ -61,6 +61,7 @@ footer{
   margin: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
 }
@@ -90,7 +91,7 @@ footer{
   font-weight: 700;
   color: white;
 }
-.immagine{
+.immagine, .didascalia{
   max-width: 200px;
   max-height: 200px;
   position: relative;
@@ -98,6 +99,7 @@ footer{
 .immagine img{
   width: 100%;
 }
+
 .layer {
   transition: .5s ease;
   display: none;
@@ -113,7 +115,12 @@ footer{
 .immagine:hover .layer {
   display: block;
 }
-
+.didascalia p{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: white;
+}
 footer, .left-footer{
   display: flex;
   justify-content: space-between;
