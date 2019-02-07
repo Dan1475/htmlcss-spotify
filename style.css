@@ -30,9 +30,10 @@ main{
   margin-left: 20%;
   height: auto;
   width: 80%;
-  background-image: linear-gradient(to left, #304334, #32AD5E)
+  background-image: linear-gradient(to left, #2203bc, #E03852)
 }
 footer{
+  width: auto;
   background: #282828;
   height: 20vh;
   border-top: 1px solid black;
@@ -42,6 +43,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .up-left{
   height: 50%;
@@ -125,8 +127,9 @@ footer{
   color: white;
 }
 .left-footer{
+
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
 }
 .left-footer img{
@@ -139,21 +142,26 @@ margin: 0 20px;
 }
 
 .center-footer{
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.center-footer img{
-  width: 100px;
+.icon-row i{
+  margin: 0 15px;
 }
-.icon-row *{
-  margin: 0 35px;
+.icon-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .right-footer i{
-  margin: 0 15px 0 15px;
+  margin: 0 5% 0 5%;
 }
 .right-footer{
+  width: 30%;
   display: flex;
+  justify-content: center;
 }
 .volume-bar{
   width: 70px;
@@ -172,7 +180,7 @@ margin: 0 20px;
   border-radius: 10px;
 }
 .play-bar{
-  width: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
   margin-top: 15px;
@@ -200,4 +208,12 @@ margin: 0 20px;
     width: 90%;
     margin-left: 10%;
   }
+}
+@media all and (max-width: 700px){
+.left-footer, .right-footer{
+  display: none;
+}
+.center-footer{
+  margin: auto;
+}
 }
