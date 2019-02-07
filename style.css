@@ -16,7 +16,7 @@ main{
 .left{
   position: fixed;
   z-index: 1;
-  height: 80vh;
+  height: 85vh;
   width: 20%;
   background: #0F0A12;
   color: white;
@@ -24,6 +24,7 @@ main{
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0 20px 2%;
+  font-size: 15px;
 }
 
 .right{
@@ -35,7 +36,7 @@ main{
 footer{
   width: auto;
   background: #282828;
-  height: 20vh;
+  height: 15vh;
   border-top: 1px solid black;
   position: sticky;
   bottom: 0;
@@ -51,11 +52,16 @@ footer{
   flex-direction: column;
   justify-content:space-around;
 }
+#home-white{
+  color: white;
+  font-weight: bold;
+}
 .up-left>img{
   width: 60%;
 }
 .wd-icon{
   width: 25px;
+  margin-right: 10px;
 }
 .down-left hr{
   border-top: 1px solid #7c6f6f;
@@ -69,6 +75,12 @@ footer{
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
+}
+.nav li{
+  font-size: 13px;
+}
+.nav li:hover{
+  color: white;
 }
 .padding-top{
   padding-top: 30px;
@@ -127,10 +139,9 @@ footer{
   color: white;
 }
 .left-footer{
-
   display: flex;
-
   align-items: center;
+  font-size: 15px;
 }
 .left-footer img{
   max-width: 70px;
