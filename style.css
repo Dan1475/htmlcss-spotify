@@ -3,6 +3,7 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #c9c7c7;
+  letter-spacing: 1.5px;
 }
 .app{
   height: 100vh;
@@ -17,27 +18,27 @@ main{
   position: fixed;
   z-index: 1;
   height: 85vh;
-  width: 20%;
+  width: 17%;
   background: #0F0A12;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0 20px 2%;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .right{
-  margin-left: 20%;
-  height: auto;
-  width: 80%;
+  margin-left: 17%;
+  height: 100%;
+  width: 83%;
   background-image: linear-gradient(to left, #2203bc, #E03852)
 }
 footer{
   width: auto;
   background: #282828;
   height: 15vh;
-  border-top: 1px solid black;
+  /* border-top: 0.5px solid black; */
   position: sticky;
   bottom: 0;
   z-index: 1;
@@ -50,17 +51,22 @@ footer{
   height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content:flex-start;
+}
+
+.up-left *{
+  margin-bottom: 10px;
 }
 #home-white{
   color: white;
   font-weight: bold;
 }
 .up-left>img{
-  width: 60%;
+  width: 70%;
+  margin-bottom: 25px;
 }
 .wd-icon{
-  width: 25px;
+  width: 20px;
   margin-right: 10px;
 }
 .down-left hr{
@@ -116,6 +122,10 @@ footer{
 .immagine img{
   width: 100%;
 }
+.cerchio{
+  border-radius: 50%;
+}
+
 
 .layer {
   transition: .5s ease;
@@ -150,6 +160,8 @@ footer{
 }
 .left-footer>*{
 margin: 0 20px;
+font-size: 12px;
+
 }
 
 .center-footer{
@@ -157,6 +169,7 @@ margin: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 13px;
 }
 .icon-row i{
   margin: 0 15px;
@@ -173,6 +186,7 @@ margin: 0 20px;
   width: 30%;
   display: flex;
   justify-content: center;
+  font-size: 13px;
 }
 .volume-bar{
   width: 70px;
